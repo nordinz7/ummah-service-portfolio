@@ -1,0 +1,82 @@
+# Site settings
+title: Ummah Service
+description: Free development support for Islamic organizations, mosques, and community projects
+url: "https://nordinz7.github.io"
+baseurl: "/ummah-service-portfolio"
+
+# Author information
+author:
+  name: Nordin Bin Zahari
+  email: vipnordin@gmail.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# GitHub Pages settings
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - .jekyll-metadata
+
+# Include files
+include:
+  - _pages
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# SEO settings
+lang: en_US
+twitter:
+  username: ummahservice
+  card: summary_large_image
+
+facebook:
+  app_id:
+  publisher:
+
+social:
+  name: Nordin
+  links:
+    - https://github.com/nordinz7
+    - https://www.linkedin.com/in/nordin-zahari-02b656b6/
+
+# Google Analytics (optional)
+google_analytics:
+
+# Theme (for GitHub Pages)
+theme: minima
+
+# Custom variables
+contact_email: vipnordin@gmail.com
+github_username: nordinz7
+linkedin_username: nordin-bin-zahari
